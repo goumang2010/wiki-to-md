@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Convert medieWiki text to markdown format</title>
+</head>
+<body>
+    <div>
+        <textarea id="src-code" class="source">
+            </textarea>
+        <div class="opbtn">
+            <button id="convert">GO</button>
+            <button id="clean">Clean</button>
+            <button id="copy">Copy</button>
+        </div>
+
+        <textarea id="target-code" class="target">
+            </textarea>
+    </div>
+</body>
+<style>
+    textarea.source,
+    textarea.target {
+        min-height: 500px;
+        min-width: 400px;
+        float: left;
+    }
+    
+    div.opbtn {
+        float: left;
+        max-width: 80px;
+        margin: 100px 30px;
+    }
+    
+    div > button {
+        width: 60px;
+        margin: 10px auto;
+    }
+</style>
+<script type="text/javascript" src="./lib/converter.js">
+</script>
+<script type="text/javascript" src="./index.js">
+</script>
+
+</html>
